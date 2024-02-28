@@ -1,10 +1,10 @@
 package boardgame;
 
-import javax.swing.text.Position;
+
 
 public class Piece {
 	
-   protected Position position;
+   protected boardgame.position position;
    private Board board;
    
    
