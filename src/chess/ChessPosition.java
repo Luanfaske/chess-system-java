@@ -1,6 +1,6 @@
 package chess;
 
-import javax.swing.text.Position;
+
 
 import boardgame.position;
 
