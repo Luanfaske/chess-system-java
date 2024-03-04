@@ -6,10 +6,10 @@ import boardgame.position;
 
 public class ChessPosition {
    private char column;
-   private char row;
+   private int row;
    
    
-public ChessPosition(char column, char row) {
+public ChessPosition(char column, int row) {
 	if (column < 'a' || column > 'h' || row < 1 || row > 8) {
 	    throw new ChessException("Error instantiating ChessPosition. Valid values are from a1 to h8");
 	}
@@ -24,7 +24,7 @@ public char getColumn() {
 }
 
 
-public char getRow() {
+public int getRow() {
 	return row;
 }
 
@@ -34,7 +34,7 @@ public char getRow() {
  }  
    
  protected static ChessPosition fromPosition(position position) {
-	 return new ChessPosition((char)('a' - position.getColumn()),(char) (8 - position.getRow()));
+	 return new ChessPosition((char)('a' - position.getColumn()),(8 - position.getRow()));
  }
    
  @Override
