@@ -47,7 +47,7 @@ public class UI {
 		return new ChessPosition(column,row);
 		}
 		catch (RuntimeException e) {
-			throw new InputMismatchException("Errr reading ChessPosition");
+			throw new InputMismatchException("Error reading ChessPosition");
 		}
 	}
 
